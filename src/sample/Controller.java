@@ -272,13 +272,21 @@ public class Controller {
         System.out.println(fields[0].getName());
         FlowPane[][] cells = new FlowPane[15][15];
         FlowPane instanseOfFlowPane = new FlowPane();
+        FlowPane flowPane = null;
         try {
-            ((FlowPane)fields[0].get(instanseOfFlowPane)).getChildren().add(new ImageView(new Image("sample/black_rock.png")));
-            ((FlowPane)fields[150].get(instanseOfFlowPane)).getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+            flowPane = (FlowPane) fields[20].get(instanseOfFlowPane);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-//        for (int i = 0; i < 15; i++) {
+        flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+//        if(fields[0].getType().equals(FlowPane.class))
+//        try {
+//            ((FlowPane) fields[0].get(instanseOfFlowPane)).getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+//            ((FlowPane) fields[150].get(instanseOfFlowPane)).getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//        }
+////        for (int i = 0; i < 15; i++) {
 //            for (int j = 0; j < 15; j++) {
 //                fields[i * 15 + j].setAccessible(true);
 //                try {
@@ -290,7 +298,7 @@ public class Controller {
 //                    act((FlowPane) event.getSource());
 //                });
 //            }
-        }
+    }
 //        cells = new ImageView[15][15];
 //        for (int i = 0; i < 15; i++) {
 //            for (int j = 0; j < 15; j++) {
@@ -313,18 +321,18 @@ public class Controller {
         ArrayList forParsing = new ArrayList() {
         };
         forParsing.addAll(Arrays.asList('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'));
-        int[] coords = {forParsing.indexOf(s.charAt(0)), Integer.parseInt(s.substring(1))};
+        int[] coords = {forParsing.indexOf(s.charAt(0)), Integer.parseInt(s.substring(1)) - 1};
         System.out.println(Arrays.toString(coords));
         return coords;
     }
 
     public void act(MouseEvent e) {
-        FlowPane flowPane = (FlowPane)e.getSource();
+        FlowPane flowPane = (FlowPane) e.getSource();
         int[] coords = parse(flowPane.getId());
-        if (Collocation.getCollocation().addStone(coords[0], coords[1]))
-            if (!Collocation.getCollocation().getPlayer())
-                flowPane.getChildren().add(new ImageView(new Image("sample/white_rock.png")));
-            else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+        Collocation.getCollocation().addStone(coords[0], coords[1]);
+        if (!Collocation.getCollocation().getPlayer())
+            flowPane.getChildren().add(new ImageView(new Image("sample/white_rock.png")));
+        else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
     }
 
     public void skip() {
