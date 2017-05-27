@@ -58,14 +58,13 @@ public class Collocation {
             return true;
         System.out.println(actCount);
         if (actCount == 2 && (Math.abs(x - 7) != 1 || Math.abs(y - 7) != 1) && getPlayer()) {
-
             System.out.println("wtf");
             return true;
         }
         if (actCount == 3 && (Math.abs(x - 7) > 2 || Math.abs(y - 7) > 2) && !getPlayer())
             return true;
         if (!getStone(new int[]{x, y}).colour)
-            if (checkOnLongSequence(new int[]{x, y}))
+            if (checkOnLongSequence(new int[]{x, y}) || checkOn3x3(new int[]{x, y}))
                 return true;
         return false;
     }
@@ -149,65 +148,114 @@ public class Collocation {
         return false;
     }
 
-    public boolean checkOn3x3(int[] coordinates){
+    public boolean checkOn3x3(int[] coordinates) {
+        System.out.println("checkOn3x3");
         int[] buffer = Arrays.copyOf(coordinates, 2);
         int count = 0;
+        int blockCount = 0;
+        boolean firstFlag = false;
+        boolean secondFlag = false;
+        int rowCount = 0;
         while (getStone(step(buffer, "l")) != null) {
             buffer = step(buffer, "l");
         }
+        if (getStone(step(buffer, "l")) != null && getStone(step(buffer, "l")).colour)
+            firstFlag = true;
         while (getStone(step(buffer, "r")) != null && getStone(coordinates) != null && getStone(step(buffer, "r")).colour == getStone(coordinates).colour) {
             buffer = step(buffer, "r");
             count++;
         }
-        if (count == 3)
-
-            return true;
+        if (getStone(step(buffer, "r")) != null && getStone(step(buffer, "r")).colour)
+            secondFlag = true;
+        if (count == 2) {
+            rowCount++;
+            if (firstFlag)
+                blockCount++;
+            if (secondFlag)
+                blockCount++;
+        }
+        firstFlag = false;
+        secondFlag = false;
         buffer = Arrays.copyOf(coordinates, 2);
         System.out.println("count " + count);
         count = 0;
         while (getStone(step(buffer, "t")) != null) {
             buffer = step(buffer, "t");
         }
+        if (getStone(step(buffer, "t")) != null && getStone(step(buffer, "t")).colour)
+            firstFlag = true;
         while (getStone(step(buffer, "b")) != null && getStone(coordinates) != null && getStone(step(buffer, "b")).colour == getStone(coordinates).colour) {
             buffer = step(buffer, "b");
             count++;
         }
-        if (count > 4)
-            return true;
+        if (getStone(step(buffer, "b")) != null && getStone(step(buffer, "b")).colour)
+            secondFlag = true;
+        if (count == 2) {
+            rowCount++;
+            if (firstFlag)
+                blockCount++;
+            if (secondFlag)
+                blockCount++;
+        }
+        firstFlag = false;
+        secondFlag = false;
         buffer = Arrays.copyOf(coordinates, 2);
         System.out.println("count " + count);
         count = 0;
         while (getStone(step(buffer, "lb")) != null) {
             buffer = step(buffer, "lb");
         }
+        if (getStone(step(buffer, "lb")) != null && getStone(step(buffer, "lb")).colour)
+            firstFlag = true;
         while (getStone(step(buffer, "rt")) != null && getStone(coordinates) != null && getStone(step(buffer, "rt")).colour == getStone(coordinates).colour) {
             buffer = step(buffer, "rt");
             count++;
         }
-        if (count > 4)
-            return true;
+        if (getStone(step(buffer, "rt")) != null && getStone(step(buffer, "rt")).colour)
+            secondFlag = true;
+        if (count == 2) {
+            rowCount++;
+            if (firstFlag)
+                blockCount++;
+            if (secondFlag)
+                blockCount++;
+        }
+        firstFlag = false;
+        secondFlag = false;
         buffer = Arrays.copyOf(coordinates, 2);
         System.out.println("count " + count);
         count = 0;
         while (getStone(step(buffer, "lt")) != null) {
             buffer = step(buffer, "lt");
         }
+        if (getStone(step(buffer, "lt")) != null && getStone(step(buffer, "lt")).colour)
+            firstFlag = true;
         while (getStone(step(buffer, "rb")) != null && getStone(coordinates) != null && getStone(step(buffer, "rb")).colour == getStone(coordinates).colour) {
             buffer = step(buffer, "rb");
             count++;
         }
-        if (count > 4)
-            return true;
+        if (getStone(step(buffer, "rb")) != null && getStone(step(buffer, "rb")).colour)
+            secondFlag = true;
+        if (count == 2) {
+            rowCount++;
+            if (firstFlag)
+                blockCount++;
+            if (secondFlag)
+                blockCount++;
+        }
         System.out.println("count " + count);
-        return false;
+        System.out.println(blockCount);
+        System.out.println(rowCount);
+        System.out.println(blockCount < 2 && rowCount > 1);
+        return blockCount < 2 && rowCount > 1;
     }
 
     private Stone getStone(int[] coord) {
         Stone stone = null;
         try {
             stone = stones[coord[0]][coord[1]];
+        } catch (ArrayIndexOutOfBoundsException ignored) {
         }
-        catch (ArrayIndexOutOfBoundsException ignored){}
         return stone;
     }
 
