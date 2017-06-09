@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.scene.control.Label;
 import javafx.scene.layout.FlowPane;
 import models.Collocation;
 import javafx.scene.image.Image;
@@ -9,9 +10,7 @@ import javafx.scene.layout.GridPane;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.*;
 
 public class Controller {
 
@@ -257,6 +256,10 @@ public class Controller {
     public FlowPane O14;
     public FlowPane O15;
 
+    public HashSet<FlowPane> flowPanes = new HashSet<>();
+    public Label statusBar;
+
+    public boolean playable = true;
 
     public void getCoordinates(MouseEvent me) {
         System.out.println(((GridPane) me.getSource()).getColumnConstraints());
@@ -273,12 +276,12 @@ public class Controller {
         FlowPane[][] cells = new FlowPane[15][15];
         FlowPane instanseOfFlowPane = new FlowPane();
         FlowPane flowPane = null;
-        try {
-            flowPane = (FlowPane) fields[20].get(instanseOfFlowPane);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-        flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+//        try {
+//            flowPane = (FlowPane) fields[20].get(instanseOfFlowPane);
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//        }
+//        flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
 //        if(fields[0].getType().equals(FlowPane.class))
 //        try {
 //            ((FlowPane) fields[0].get(instanseOfFlowPane)).getChildren().add(new ImageView(new Image("sample/black_rock.png")));
@@ -317,25 +320,42 @@ public class Controller {
 
 
     public int[] parse(String s) {
-        System.out.println(s);
+        //System.out.println(s);
         ArrayList forParsing = new ArrayList() {
         };
         forParsing.addAll(Arrays.asList('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'));
         int[] coords = {forParsing.indexOf(s.charAt(0)), Integer.parseInt(s.substring(1)) - 1};
-        System.out.println(Arrays.toString(coords));
+        //System.out.println(Arrays.toString(coords));
         return coords;
     }
 
     public void act(MouseEvent e) {
-        FlowPane flowPane = (FlowPane) e.getSource();
-        int[] coords = parse(flowPane.getId());
-        Collocation.getCollocation().addStone(coords[0], coords[1]);
-        if (!Collocation.getCollocation().getPlayer())
-            flowPane.getChildren().add(new ImageView(new Image("sample/white_rock.png")));
-        else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+        if (playable) {
+            FlowPane flowPane = (FlowPane) e.getSource();
+            flowPanes.add(flowPane);
+            int[] coords = parse(flowPane.getId());
+            Collocation.getCollocation().addStone(coords[0], coords[1]);
+            int check = Collocation.getCollocation().check();
+            statusBar.setText(Integer.toString(check));
+            if (check == -1 || check == 2 || check == -2)
+                playable = false;
+            flowPane.getChildren().retainAll();
+                if (!Collocation.getCollocation().getPlayer())
+                    flowPane.getChildren().add(new ImageView(new Image("sample/white_rock.png")));
+                else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+        }
     }
 
     public void skip() {
         Collocation.getCollocation().skip();
+    }
+
+    public void restart() {
+        System.out.println("wtf");
+        Collocation.restart();
+        for (FlowPane flowPane : flowPanes) {
+            flowPane.getChildren().retainAll();
+        }
+        playable = true;
     }
 }
