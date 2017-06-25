@@ -407,11 +407,13 @@ public class Controller {
         isBotActivated = false;
     }
     public String textplayer(int check){
-
-        if (check==(-1) || check==2) return "White win";
-        else if (check==-2) return "Black win";
-        else if (check==0)  return "make a move";
-        return "it's okay";
+        switch (check) {
+            case -1: return "White win";
+            case 0: return "make a move";
+            case 2: return "White win";
+            case -2: return "Black win";
+            default: return "it's okay";
+        }
     }
 
     public void highlight(MouseEvent e) {
