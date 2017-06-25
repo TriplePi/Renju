@@ -1,5 +1,7 @@
 package models;
 
+import sample.Controller;
+
 import java.util.Arrays;
 
 /**
@@ -64,10 +66,8 @@ public class Collocation {
             invertPlayer();
             return false;
         }
-        if (check == 2 || check == -2) {
+        if (check == 2 || check == -2)
             System.out.println("winner" + check);
-
-        }
         invertPlayer();
         return true;
     }

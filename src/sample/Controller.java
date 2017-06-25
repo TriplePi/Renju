@@ -360,6 +360,10 @@ public class Controller {
             else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
             if (isBotActivated && Collocation.getCollocation().check()==0)
                 botAct();
+            check = Collocation.getCollocation().check();
+            statusBar.setText(Integer.toString(check));
+            if (check == -1 || check == 2 || check == -2)
+                playable = false;
         }
     }
 
@@ -389,6 +393,16 @@ public class Controller {
         for (Pane flowPane : flowPanes) {
             flowPane.getChildren().retainAll();
         }
+        for (int i = 0; i < 15; i++) {
+            for (int j = 0; j < 15; j++) {
+                Class clazz = Controller.class;
+                try {
+                    ((Pane)clazz.getField(unparse(new int[]{i,j})).get(this)).getChildren().retainAll();
+                } catch (NoSuchFieldException | IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
         playable = true;
         isBotActivated = false;
     }
@@ -410,5 +424,4 @@ public class Controller {
         }
         pane.getChildren().remove(rectangle);
     }
-
 }
