@@ -15,12 +15,27 @@ public class Collocation {
     int[] lastStone;
 
 
-    public Collocation() {
+    private Collocation() {
         player = false;
         stones = new Stone[15][15];
         blackCount = 0;
         whiteCount = 0;
         actCount = 0;
+    }
+
+    public Collocation(Collocation collocation){
+        player = collocation.player;
+        stones = new Stone[15][15];
+        for (int i = 0; i < 15; i++) {
+            for (int j = 0; j < 15; j++) {
+                if(collocation.stones[i][j]!=null)
+                    this.stones[i][j] = collocation.stones[i][j].clone();
+            }
+        }
+        blackCount = collocation.blackCount;
+        whiteCount = collocation.whiteCount;
+        actCount = collocation.actCount;
+        lastStone = collocation.lastStone.clone();
     }
 
     public static void restart() {
@@ -49,8 +64,10 @@ public class Collocation {
             invertPlayer();
             return false;
         }
-        if (check == 2 || check == -2)
+        if (check == 2 || check == -2) {
             System.out.println("winner" + check);
+
+        }
         invertPlayer();
         return true;
     }
@@ -83,7 +100,7 @@ public class Collocation {
                 return 2;
             }
         } else {
-            System.out.println("fakse check");
+            System.out.println("false check");
             if (t + b == 4 || l + r == 4 || lt + rb == 4 || lb + rt == 4)
                 return -2;
             if (t + b == 5 || l + r == 5 || lt + rb == 5 || lb + rt == 5)
@@ -98,7 +115,7 @@ public class Collocation {
                     if (directions[i] + directions[j] > max) {
                         max = directions[i] + directions[j];
                     }
-            System.out.println("max" + max);
+            //System.out.println("max" + max);
             if (max >= 4 && max % 2 == 0)
                 return -1;
 //        if (!getStone(new int[]{x, y}).colour)
@@ -107,6 +124,12 @@ public class Collocation {
             return 0;
         }
         return 0;
+    }
+
+    public boolean check(int i,int j) {
+        Collocation collocation = new Collocation(getCollocation());
+        collocation.addStone(i,j);
+        return collocation.check() != -1;
     }
 
     public static Collocation getCollocation() {
@@ -404,7 +427,7 @@ public class Collocation {
             drx++;
             dry++;
         }
-        System.out.println(Arrays.toString(new int[]{ulAnswer, uAnswer, urAnswer, rAnswer, drAnswer, dAnswer, dlAnswer, lAnswer}));
+        //System.out.println(Arrays.toString(new int[]{ulAnswer, uAnswer, urAnswer, rAnswer, drAnswer, dAnswer, dlAnswer, lAnswer}));
         return new int[]{ulAnswer, uAnswer, urAnswer, rAnswer, drAnswer, dAnswer, dlAnswer, lAnswer};
     }
 }

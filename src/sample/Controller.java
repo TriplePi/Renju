@@ -1,7 +1,13 @@
 package sample;
 
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
+import models.AI;
 import models.Collocation;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -260,6 +266,7 @@ public class Controller {
     public Label statusBar;
 
     public boolean playable = true;
+    public boolean isBotActivated = false;
 
     public void getCoordinates(MouseEvent me) {
         System.out.println(((GridPane) me.getSource()).getColumnConstraints());
@@ -267,15 +274,16 @@ public class Controller {
     }
 
     public void start() {
-        System.out.println("start");
-        H7.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
-        Class clas = Controller.class;
-        Field[] fields = clas.getFields();
-        System.out.println(fields.length);
-        System.out.println(fields[0].getName());
-        Pane[][] cells = new Pane[15][15];
-        Pane instanseOfFlowPane = new Pane();
-        Pane flowPane = null;
+        isBotActivated = true;
+//        System.out.println("start");
+//        H7.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+//        Class clas = Controller.class;
+//        Field[] fields = clas.getFields();
+//        System.out.println(fields.length);
+//        System.out.println(fields[0].getName());
+//        Pane[][] cells = new Pane[15][15];
+//        Pane instanseOfFlowPane = new Pane();
+//        Pane flowPane = null;
 //        try {
 //            flowPane = (FlowPane) fields[20].get(instanseOfFlowPane);
 //        } catch (IllegalAccessException e) {
@@ -329,6 +337,13 @@ public class Controller {
         return coords;
     }
 
+    public String unparse(int[] coords){
+        ArrayList forParsing = new ArrayList() {
+        };
+        forParsing.addAll(Arrays.asList('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'));
+        return forParsing.get(coords[0])+Integer.toString(coords[1]+1);
+    }
+
     public void act(MouseEvent e) {
         if (playable) {
             Pane flowPane = (Pane) e.getSource();
@@ -340,9 +355,27 @@ public class Controller {
             if (check == -1 || check == 2 || check == -2)
                 playable = false;
             flowPane.getChildren().retainAll();
-                if (!Collocation.getCollocation().getPlayer())
-                    flowPane.getChildren().add(new ImageView(new Image("sample/white_rock.png")));
-                else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+            if (!Collocation.getCollocation().getPlayer())
+                flowPane.getChildren().add(new ImageView(new Image("sample/white_rock.png")));
+            else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+            if (isBotActivated && Collocation.getCollocation().check()==0)
+                botAct();
+        }
+    }
+
+    public void botAct() {
+        AI ai = new AI();
+        int[] move = ai.calculate();
+        System.out.println("taks taks "+Arrays.toString(move));
+        if (move != null) {
+            Class clazz = Controller.class;
+            try {
+                ((Pane)clazz.getField(unparse(move)).get(this)).getChildren().add(new ImageView(new Image("sample/white_rock.png")));
+            } catch (NoSuchFieldException | IllegalAccessException e) {
+                e.printStackTrace();
+            }
+            Collocation.getCollocation().addStone(move[0], move[1]);
+
         }
     }
 
@@ -357,5 +390,25 @@ public class Controller {
             flowPane.getChildren().retainAll();
         }
         playable = true;
+        isBotActivated = false;
     }
+
+    public void highlight(MouseEvent e) {
+        Pane pane = (Pane) e.getSource();
+        Rectangle rectangle = new Rectangle(57, 57);
+        rectangle.setFill(Color.LIGHTGREEN);
+        rectangle.setOpacity(0.5);
+        pane.getChildren().add(rectangle);
+    }
+
+    public void lowlight(MouseEvent e) {
+        Pane pane = (Pane) e.getSource();
+        Rectangle rectangle = null;
+        for (Node node : pane.getChildren()) {
+            if (node instanceof Rectangle)
+                rectangle = (Rectangle) node;
+        }
+        pane.getChildren().remove(rectangle);
+    }
+
 }

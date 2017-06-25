@@ -18,252 +18,244 @@
         <Label layoutX="978.0" layoutY="496.0" onMouseClicked="#skip" prefHeight="149.0" prefWidth="153.0" />
         <Label fx:id="restartButton"  layoutX="1219.0" layoutY="765.0" prefHeight="117.0" prefWidth="109.0" onMouseClicked="#restart"/>
 
-        <Pane fx:id="A1" layoutX="44" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A2" layoutX="44" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A3" layoutX="44" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A4" layoutX="44" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A5" layoutX="44" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A6" layoutX="44" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A7" layoutX="44" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A8" layoutX="44" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A9" layoutX="44" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A10" layoutX="44" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A11" layoutX="44" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A12" layoutX="44" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A13" layoutX="44" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A14" layoutX="44" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="A15" layoutX="44" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="A1" layoutX="44" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A2" layoutX="44" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A3" layoutX="44" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A4" layoutX="44" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A5" layoutX="44" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A6" layoutX="44" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A7" layoutX="44" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A8" layoutX="44" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A9" layoutX="44" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A10" layoutX="44" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A11" layoutX="44" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A12" layoutX="44" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A13" layoutX="44" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A14" layoutX="44" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
+        <Pane fx:id="A15" layoutX="44" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight"/>
 
-        <Pane fx:id="B1" layoutX="101" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B2" layoutX="101" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B3" layoutX="101" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B4" layoutX="101" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B5" layoutX="101" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B6" layoutX="101" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B7" layoutX="101" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B8" layoutX="101" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B9" layoutX="101" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B10" layoutX="101" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B11" layoutX="101" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B12" layoutX="101" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B13" layoutX="101" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B14" layoutX="101" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="B15" layoutX="101" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="B1" layoutX="101" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B2" layoutX="101" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B3" layoutX="101" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B4" layoutX="101" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B5" layoutX="101" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B6" layoutX="101" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B7" layoutX="101" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B8" layoutX="101" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B9" layoutX="101" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B10" layoutX="101" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B11" layoutX="101" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B12" layoutX="101" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B13" layoutX="101" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B14" layoutX="101" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="B15" layoutX="101" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="C1" layoutX="158" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C2" layoutX="158" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C3" layoutX="158" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C4" layoutX="158" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C5" layoutX="158" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C6" layoutX="158" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C7" layoutX="158" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C8" layoutX="158" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C9" layoutX="158" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C10" layoutX="158" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C11" layoutX="158" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C12" layoutX="158" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C13" layoutX="158" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C14" layoutX="158" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="C15" layoutX="158" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="C1" layoutX="158" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C2" layoutX="158" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C3" layoutX="158" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C4" layoutX="158" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C5" layoutX="158" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C6" layoutX="158" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C7" layoutX="158" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C8" layoutX="158" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C9" layoutX="158" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C10" layoutX="158" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C11" layoutX="158" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C12" layoutX="158" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C13" layoutX="158" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C14" layoutX="158" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="C15" layoutX="158" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="D1" layoutX="215" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D2" layoutX="215" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D3" layoutX="215" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D4" layoutX="215" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D5" layoutX="215" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D6" layoutX="215" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D7" layoutX="215" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D8" layoutX="215" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D9" layoutX="215" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D10" layoutX="215" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D11" layoutX="215" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D12" layoutX="215" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D13" layoutX="215" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D14" layoutX="215" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="D15" layoutX="215" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="D1" layoutX="215" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D2" layoutX="215" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D3" layoutX="215" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D4" layoutX="215" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D5" layoutX="215" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D6" layoutX="215" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D7" layoutX="215" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D8" layoutX="215" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D9" layoutX="215" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D10" layoutX="215" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D11" layoutX="215" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D12" layoutX="215" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D13" layoutX="215" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D14" layoutX="215" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="D15" layoutX="215" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="E1" layoutX="272" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E2" layoutX="272" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E3" layoutX="272" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E4" layoutX="272" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E5" layoutX="272" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E6" layoutX="272" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E7" layoutX="272" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E8" layoutX="272" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E9" layoutX="272" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E10" layoutX="272" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E11" layoutX="272" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E12" layoutX="272" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E13" layoutX="272" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E14" layoutX="272" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="E15" layoutX="272" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="E1" layoutX="272" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E2" layoutX="272" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E3" layoutX="272" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E4" layoutX="272" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E5" layoutX="272" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E6" layoutX="272" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E7" layoutX="272" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E8" layoutX="272" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E9" layoutX="272" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E10" layoutX="272" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E11" layoutX="272" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E12" layoutX="272" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E13" layoutX="272" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E14" layoutX="272" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="E15" layoutX="272" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="F1" layoutX="329" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F2" layoutX="329" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F3" layoutX="329" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F4" layoutX="329" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F5" layoutX="329" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F6" layoutX="329" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F7" layoutX="329" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F8" layoutX="329" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F9" layoutX="329" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F10" layoutX="329" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F11" layoutX="329" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F12" layoutX="329" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F13" layoutX="329" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F14" layoutX="329" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="F15" layoutX="329" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="F1" layoutX="329" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F2" layoutX="329" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F3" layoutX="329" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F4" layoutX="329" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F5" layoutX="329" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F6" layoutX="329" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F7" layoutX="329" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F8" layoutX="329" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F9" layoutX="329" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F10" layoutX="329" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F11" layoutX="329" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F12" layoutX="329" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F13" layoutX="329" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F14" layoutX="329" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="F15" layoutX="329" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="G1" layoutX="386" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G2" layoutX="386" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G3" layoutX="386" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G4" layoutX="386" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G5" layoutX="386" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G6" layoutX="386" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G7" layoutX="386" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G8" layoutX="386" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G9" layoutX="386" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G10" layoutX="386" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G11" layoutX="386" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G12" layoutX="386" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G13" layoutX="386" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G14" layoutX="386" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="G15" layoutX="386" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="G1" layoutX="386" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G2" layoutX="386" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G3" layoutX="386" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G4" layoutX="386" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G5" layoutX="386" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G6" layoutX="386" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G7" layoutX="386" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G8" layoutX="386" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G9" layoutX="386" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G10" layoutX="386" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G11" layoutX="386" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G12" layoutX="386" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G13" layoutX="386" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G14" layoutX="386" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="G15" layoutX="386" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="H1" layoutX="443" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H2" layoutX="443" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H3" layoutX="443" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H4" layoutX="443" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H5" layoutX="443" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H6" layoutX="443" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H7" layoutX="443" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H8" layoutX="443" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H9" layoutX="443" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H10" layoutX="443" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H11" layoutX="443" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H12" layoutX="443" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H13" layoutX="443" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H14" layoutX="443" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="H15" layoutX="443" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="H1" layoutX="443" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H2" layoutX="443" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H3" layoutX="443" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H4" layoutX="443" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H5" layoutX="443" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H6" layoutX="443" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H7" layoutX="443" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H8" layoutX="443" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H9" layoutX="443" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H10" layoutX="443" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H11" layoutX="443" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H12" layoutX="443" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H13" layoutX="443" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H14" layoutX="443" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="H15" layoutX="443" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="I1" layoutX="500" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I2" layoutX="500" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I3" layoutX="500" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I4" layoutX="500" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I5" layoutX="500" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I6" layoutX="500" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I7" layoutX="500" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I8" layoutX="500" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I9" layoutX="500" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I10" layoutX="500" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I11" layoutX="500" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I12" layoutX="500" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I13" layoutX="500" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I14" layoutX="500" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="I15" layoutX="500" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="I1" layoutX="500" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I2" layoutX="500" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I3" layoutX="500" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I4" layoutX="500" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I5" layoutX="500" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I6" layoutX="500" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I7" layoutX="500" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I8" layoutX="500" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I9" layoutX="500" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I10" layoutX="500" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I11" layoutX="500" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I12" layoutX="500" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I13" layoutX="500" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I14" layoutX="500" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="I15" layoutX="500" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="J1" layoutX="557" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J2" layoutX="557" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J3" layoutX="557" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J4" layoutX="557" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J5" layoutX="557" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J6" layoutX="557" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J7" layoutX="557" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J8" layoutX="557" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J9" layoutX="557" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J10" layoutX="557" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J11" layoutX="557" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J12" layoutX="557" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J13" layoutX="557" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J14" layoutX="557" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="J15" layoutX="557" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="J1" layoutX="557" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J2" layoutX="557" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J3" layoutX="557" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J4" layoutX="557" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J5" layoutX="557" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J6" layoutX="557" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J7" layoutX="557" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J8" layoutX="557" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J9" layoutX="557" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J10" layoutX="557" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J11" layoutX="557" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J12" layoutX="557" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J13" layoutX="557" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J14" layoutX="557" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="J15" layoutX="557" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="K1" layoutX="614" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K2" layoutX="614" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K3" layoutX="614" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K4" layoutX="614" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K5" layoutX="614" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K6" layoutX="614" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K7" layoutX="614" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K8" layoutX="614" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K9" layoutX="614" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K10" layoutX="614" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K11" layoutX="614" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K12" layoutX="614" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K13" layoutX="614" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K14" layoutX="614" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="K15" layoutX="614" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="K1" layoutX="614" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K2" layoutX="614" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K3" layoutX="614" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K4" layoutX="614" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K5" layoutX="614" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K6" layoutX="614" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K7" layoutX="614" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K8" layoutX="614" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K9" layoutX="614" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K10" layoutX="614" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K11" layoutX="614" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K12" layoutX="614" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K13" layoutX="614" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K14" layoutX="614" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="K15" layoutX="614" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="L1" layoutX="671" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L2" layoutX="671" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L3" layoutX="671" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L4" layoutX="671" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L5" layoutX="671" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L6" layoutX="671" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L7" layoutX="671" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L8" layoutX="671" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L9" layoutX="671" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L10" layoutX="671" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L11" layoutX="671" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L12" layoutX="671" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L13" layoutX="671" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L14" layoutX="671" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="L15" layoutX="671" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="L1" layoutX="671" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L2" layoutX="671" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L3" layoutX="671" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L4" layoutX="671" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L5" layoutX="671" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L6" layoutX="671" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L7" layoutX="671" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L8" layoutX="671" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L9" layoutX="671" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L10" layoutX="671" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L11" layoutX="671" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L12" layoutX="671" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L13" layoutX="671" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L14" layoutX="671" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="L15" layoutX="671" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="M1" layoutX="728" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M2" layoutX="728" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M3" layoutX="728" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M4" layoutX="728" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M5" layoutX="728" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M6" layoutX="728" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M7" layoutX="728" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M8" layoutX="728" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M9" layoutX="728" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M10" layoutX="728" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M11" layoutX="728" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M12" layoutX="728" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M13" layoutX="728" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M14" layoutX="728" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="M15" layoutX="728" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="M1" layoutX="728" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M2" layoutX="728" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M3" layoutX="728" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M4" layoutX="728" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M5" layoutX="728" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M6" layoutX="728" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M7" layoutX="728" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M8" layoutX="728" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M9" layoutX="728" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M10" layoutX="728" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M11" layoutX="728" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M12" layoutX="728" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M13" layoutX="728" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M14" layoutX="728" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="M15" layoutX="728" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="N1" layoutX="785" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N2" layoutX="785" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N3" layoutX="785" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N4" layoutX="785" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N5" layoutX="785" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N6" layoutX="785" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N7" layoutX="785" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N8" layoutX="785" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N9" layoutX="785" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N10" layoutX="785" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N11" layoutX="785" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N12" layoutX="785" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N13" layoutX="785" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N14" layoutX="785" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="N15" layoutX="785" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
+        <Pane fx:id="N1" layoutX="785" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N2" layoutX="785" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N3" layoutX="785" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N4" layoutX="785" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N5" layoutX="785" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N6" layoutX="785" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N7" layoutX="785" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N8" layoutX="785" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N9" layoutX="785" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N10" layoutX="785" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N11" layoutX="785" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N12" layoutX="785" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N13" layoutX="785" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N14" layoutX="785" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="N15" layoutX="785" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
 
-        <Pane fx:id="O1" layoutX="842" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O2" layoutX="842" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O3" layoutX="842" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O4" layoutX="842" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O5" layoutX="842" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O6" layoutX="842" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O7" layoutX="842" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O8" layoutX="842" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O9" layoutX="842" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O10" layoutX="842" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O11" layoutX="842" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O12" layoutX="842" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O13" layoutX="842" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O14" layoutX="842" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-        <Pane fx:id="O15" layoutX="842" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" />
-
-
-
-
-
-
-
-
+        <Pane fx:id="O1" layoutX="842" layoutY="34" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O2" layoutX="842" layoutY="91" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O3" layoutX="842" layoutY="148" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O4" layoutX="842" layoutY="206" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O5" layoutX="842" layoutY="263" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O6" layoutX="842" layoutY="320" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O7" layoutX="842" layoutY="377" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O8" layoutX="842" layoutY="434" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O9" layoutX="842" layoutY="492" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O10" layoutX="842" layoutY="549" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O11" layoutX="842" layoutY="606" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O12" layoutX="842" layoutY="663" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O13" layoutX="842" layoutY="720" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O14" layoutX="842" layoutY="778" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
+        <Pane fx:id="O15" layoutX="842" layoutY="835" onMouseClicked="#act" prefHeight="57" prefWidth="57" onMouseEntered="#highlight" onMouseExited="#lowlight" />
     </children>
 </AnchorPane>

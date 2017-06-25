@@ -12,4 +12,8 @@ public class Stone {
     public boolean getPlayer() {
         return colour;
     }
+
+    public Stone clone(){
+        return new Stone(this.colour);
+    }
 }
