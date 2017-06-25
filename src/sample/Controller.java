@@ -351,7 +351,7 @@ public class Controller {
             int[] coords = parse(flowPane.getId());
             Collocation.getCollocation().addStone(coords[0], coords[1]);
             int check = Collocation.getCollocation().check();
-            statusBar.setText(Integer.toString(check));
+            statusBar.setText(textplayer(check));
             if (check == -1 || check == 2 || check == -2)
                 playable = false;
             flowPane.getChildren().retainAll();
@@ -361,7 +361,7 @@ public class Controller {
             if (isBotActivated && Collocation.getCollocation().check()==0)
                 botAct();
             check = Collocation.getCollocation().check();
-            statusBar.setText(Integer.toString(check));
+            statusBar.setText(textplayer(check));
             if (check == -1 || check == 2 || check == -2)
                 playable = false;
         }
@@ -405,6 +405,13 @@ public class Controller {
         }
         playable = true;
         isBotActivated = false;
+    }
+    public String textplayer(int check){
+
+        if (check==(-1) || check==2) return "White win";
+        else if (check==-2) return "Black win";
+        else if (check==0)  return "make a move";
+        return "it's okay";
     }
 
     public void highlight(MouseEvent e) {
