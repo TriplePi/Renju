@@ -337,19 +337,34 @@ public class Controller {
         return coords;
     }
 
-    public String unparse(int[] coords){
+    public String unparse(int[] coords) {
         ArrayList forParsing = new ArrayList() {
         };
         forParsing.addAll(Arrays.asList('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'));
-        return forParsing.get(coords[0])+Integer.toString(coords[1]+1);
+        return forParsing.get(coords[0]) + Integer.toString(coords[1] + 1);
     }
 
     public void act(MouseEvent e) {
         if (playable) {
             Pane flowPane = (Pane) e.getSource();
+//            boolean flag = true;
+//            for (Node node : flowPane.getChildren()) {
+//                if (node instanceof ImageView){
+//                    return;
+//                }
+//            }
             flowPanes.add(flowPane);
             int[] coords = parse(flowPane.getId());
-            Collocation.getCollocation().addStone(coords[0], coords[1]);
+            if (!Collocation.getCollocation().addStone(coords[0], coords[1])) {
+                if (!Collocation.getCollocation().getPlayer())
+                    flowPane.getChildren().add(new ImageView(new Image("sample/white_rock.png")));
+                else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
+                playable = false;
+                if (Collocation.getCollocation().getPlayer())
+                    statusBar.setText(textplayer(2));
+                else statusBar.setText(textplayer(-2));
+                return;
+            }
             int check = Collocation.getCollocation().check();
             statusBar.setText(textplayer(check));
             if (check == -1 || check == 2 || check == -2)
@@ -358,23 +373,24 @@ public class Controller {
             if (!Collocation.getCollocation().getPlayer())
                 flowPane.getChildren().add(new ImageView(new Image("sample/white_rock.png")));
             else flowPane.getChildren().add(new ImageView(new Image("sample/black_rock.png")));
-            if (isBotActivated && Collocation.getCollocation().check()==0)
+            if (isBotActivated && Collocation.getCollocation().check() == 0 && playable) {
                 botAct();
-            check = Collocation.getCollocation().check();
-            statusBar.setText(textplayer(check));
-            if (check == -1 || check == 2 || check == -2)
-                playable = false;
+                check = Collocation.getCollocation().check();
+                statusBar.setText(textplayer(check));
+                if (check == -1 || check == 2 || check == -2)
+                    playable = false;
+            }
         }
     }
 
     public void botAct() {
         AI ai = new AI();
         int[] move = ai.calculate();
-        System.out.println("taks taks "+Arrays.toString(move));
+        System.out.println("taks taks " + Arrays.toString(move));
         if (move != null) {
             Class clazz = Controller.class;
             try {
-                ((Pane)clazz.getField(unparse(move)).get(this)).getChildren().add(new ImageView(new Image("sample/white_rock.png")));
+                ((Pane) clazz.getField(unparse(move)).get(this)).getChildren().add(new ImageView(new Image("sample/white_rock.png")));
             } catch (NoSuchFieldException | IllegalAccessException e) {
                 e.printStackTrace();
             }
@@ -397,7 +413,7 @@ public class Controller {
             for (int j = 0; j < 15; j++) {
                 Class clazz = Controller.class;
                 try {
-                    ((Pane)clazz.getField(unparse(new int[]{i,j})).get(this)).getChildren().retainAll();
+                    ((Pane) clazz.getField(unparse(new int[]{i, j})).get(this)).getChildren().retainAll();
                 } catch (NoSuchFieldException | IllegalAccessException e) {
                     e.printStackTrace();
                 }
@@ -406,13 +422,19 @@ public class Controller {
         playable = true;
         isBotActivated = false;
     }
-    public String textplayer(int check){
+
+    public String textplayer(int check) {
         switch (check) {
-            case -1: return "White win";
-            case 0: return "make a move";
-            case 2: return "White win";
-            case -2: return "Black win";
-            default: return "it's okay";
+            case -1:
+                return "White win";
+            case 0:
+                return "make a move";
+            case 2:
+                return "White win";
+            case -2:
+                return "Black win";
+            default:
+                return "it's okay";
         }
     }
 
